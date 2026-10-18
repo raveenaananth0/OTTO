@@ -1,0 +1,111 @@
+.editor {
+  min-width: 0;
+}
+.help {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #738995;
+  margin: 0 0 16px;
+}
+.statement {
+  display: grid;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #426379;
+  margin-bottom: 18px;
+}
+.statement textarea {
+  font-size: 12px;
+  min-height: 75px;
+  resize: vertical;
+}
+.items {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 16px;
+  max-height: none;
+  padding-right: 3px;
+}
+.item {
+  background: #f6f9fb;
+  border: 1px solid #e0e9ef;
+  border-radius: 7px;
+  padding: 12px;
+  min-width: 0;
+}
+.top {
+  display: flex;
+  gap: 4px;
+  align-items: end;
+}
+.name {
+  flex: 1;
+  min-width: 0;
+}
+.item label {
+  display: grid;
+  gap: 6px;
+  font-size: 10px;
+  color: #698492;
+  min-width: 0;
+}
+.item input {
+  font-size: 12px;
+  min-width: 0;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 10px 0;
+}
+.kind {
+  margin-top: 4px;
+}
+.item select {
+  width: 100%;
+  height: 36px;
+  font:
+    11px Arial,
+    sans-serif;
+  color: #315970;
+  border: 1px solid #ccdce6;
+  border-radius: 5px;
+  background: white;
+  padding: 0 7px;
+}
+.help:last-child {
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .items {
+    max-height: none;
+  }
+  .item input {
+    font-size: 16px;
+  }
+  .item select {
+    font-size: 12px;
+  }
+}
+
+.item > label {
+  margin-bottom: 10px;
+}
+
+.amount {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
+  margin: 10px 0;
+}
+.options summary {
+  color: #526f80;
+  font-size: 10px;
+  cursor: pointer;
+}
+.options label {
+  margin-top: 10px;
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env*
+.sites-runtime/
+.DS_Store
+worker/assets.generated.js
+
+work/

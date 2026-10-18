@@ -1,0 +1,1 @@
+declare module "@floot/ai"{export const flootAi:{chat:(body:{model:string;instructions:string;reasoning:{effort:string};input:unknown[];max_output_tokens:number;store:boolean})=>Promise<unknown>};export class FlootAiOutOfCreditsError extends Error{}export class FlootAiRateLimitError extends Error{}}

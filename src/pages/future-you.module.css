@@ -1,0 +1,233 @@
+.layout {
+  display: grid;
+  grid-template-columns: 270px minmax(320px, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.planSources {
+  background: #eaf5fa;
+  border: 1px solid #bedae8;
+  color: #004977;
+  padding: 16px 18px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.planSources span {
+  width: 100%;
+  color: #24465c;
+}
+.panel {
+  background: white;
+  border: 1px solid #dce5eb;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 0;
+}
+.panel h2 {
+  font-size: 16px;
+  letter-spacing: -0.3px;
+  margin: 0 0 18px;
+}
+.hint {
+  font-size: 11px;
+  color: #718694;
+  line-height: 1.6;
+  margin: 8px 0 0;
+}
+.name {
+  margin: 16px 0 12px;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.legend button {
+  font-size: 11px;
+  max-width: 100%;
+  height: auto;
+  min-height: 30px;
+  white-space: normal;
+  text-align: left;
+}
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.snapshot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+.snapshot div {
+  font-size: 11px;
+  color: #6a808c;
+}
+.snapshot strong {
+  display: block;
+  font-size: 18px;
+  color: #004977;
+  letter-spacing: -0.5px;
+  margin: 6px 0;
+}
+.milestone {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  align-items: center;
+  margin: 10px 0;
+  color: #536d7c;
+}
+.branchActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.mobileTabs {
+  display: none;
+}
+.assumptions {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #6a7e8a;
+  max-width: 1040px;
+  margin: 18px 0;
+}
+.budget {
+  font-size: 12px;
+  color: #536d7c;
+  line-height: 1.7;
+  margin-top: 18px;
+}
+.selectedName {
+  font-size: 12px;
+  color: #607482;
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1250px) {
+  .layout {
+    grid-template-columns: 210px minmax(280px, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .layout {
+    display: block;
+  }
+  .mobileTabs {
+    display: none;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .hiddenMobile {
+    display: block;
+  }
+  .snapshot {
+    gap: 7px;
+  }
+  .snapshot strong {
+    font-size: 16px;
+  }
+  .panel {
+    padding: 18px;
+  }
+}
+
+.liveImpact {
+  padding: 14px;
+  margin: 14px 0 18px;
+  border-radius: 7px;
+  background: #eaf5fb;
+  color: #004977;
+  display: grid;
+  gap: 5px;
+  font-size: 12px;
+}
+.liveImpact strong {
+  font-size: 25px;
+  letter-spacing: -0.5px;
+}
+.comparison {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+.comparison div {
+  background: #f2f6f9;
+  padding: 12px;
+  border-radius: 6px;
+  display: grid;
+  gap: 7px;
+  font-size: 11px;
+}
+.comparison strong {
+  font-size: 20px;
+  color: #004977;
+  overflow-wrap: anywhere;
+}
+.jumpToChart {
+  display: none;
+}
+@media (min-width: 701px) {
+  .layout > section:last-child {
+    position: sticky;
+    top: 90px;
+  }
+}
+@media (max-width: 700px) {
+  .jumpToChart {
+    display: block;
+    color: #0073aa;
+    margin-bottom: 16px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .panel {
+    scroll-margin-top: 90px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .comparison strong {
+    font-size: 16px;
+  }
+}
+
+.yearField {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  color: #004977;
+  margin: 0 0 22px;
+}
+.yearField input {
+  width: 116px;
+  font-size: 16px;
+}
+
+.snapshot {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.snapshot > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 380px) {
+  .snapshot {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

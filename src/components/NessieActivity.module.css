@@ -1,0 +1,48 @@
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  color: #183b50;
+}
+.columns h3 {
+  color: #004977;
+  font-size: 15px;
+}
+.columns p {
+  font-size: 14px;
+  color: #24465c;
+}
+.columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.columns li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #e0e8ed;
+  padding: 12px 0;
+  font-size: 14px;
+}
+.columns li div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.columns span {
+  font-size: 12px;
+  color: #36596e;
+}
+.columns b {
+  flex-shrink: 0;
+  color: #004977;
+}
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
